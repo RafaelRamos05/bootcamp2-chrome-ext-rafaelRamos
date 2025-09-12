@@ -1,29 +1,18 @@
-# Water Reminder — Extensão Chrome (MV3)
+Extensão do Google Chrome desenvolvida como Desafio de Entrega Inicial do Bootcamp II. Permite praticar conceitos de MV3, popup, background/service worker, content scripts e publicação no GitHub Pages.
 
+ Objetivo
 
-Extensão simples que lembra o usuário de beber um copo de água periodicamente (padrão: 30 minutos). Desenvolvido para propósito didático (Bootcamp / Tarefa de curso).
+Construir uma extensão simples e funcional para Google Chrome (Manifest V3), publicada em repositório público e com página de projeto no GitHub Pages.
+Não há backend nesta fase; foco total em front-end e boas práticas de MV3.
 
+ Funcionalidades
 
-## Funcionalidades
-- Notificações periódicas via `chrome.alarms` + `chrome.notifications`.
-- Popup para ligar/desligar, ajustar intervalo e testar notificação.
-- Uso de `chrome.storage` para persistir preferências.
+Popup com UI simples (HTML/CSS/JS).
 
+Service worker em background para eventos (alarms, storage, runtime, tabs…).
 
-## Instalação local
-1. Baixe/clone o repositório
-2. Em `chrome://extensions`, ative *Developer mode*
-3. `Load unpacked` → selecione a pasta do projeto
+Opcional: content script para manipulação de páginas específicas.
 
+Ping entre popup e background para testar comunicação.
 
-## Publicação
-- Crie uma Release com o `.zip` para facilitar o download
-- Configure GitHub Pages (branch `main`, pasta `/docs`) para publicar `docs/index.html`
-
-
-## Permissões
-- `alarms`, `storage`, `notifications` (apenas o mínimo necessário)
-
-
-## Licença
-MIT
+Ícones adequados para diferentes tamanhos (16, 32, 48, 128 px).
