@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Water Reminder</title>
+<link rel="stylesheet" href="../styles/global.css" />
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+<div class="container">
+  <img src="../assets/logo.svg" class="logo" alt="Water Reminder" />
+  <h1>Water Reminder</h1>
+
+  <div class="row">
+    <label for="enabled">Ativado</label>
+    <input id="enabled" type="checkbox" />
+  </div>
+
+  <div class="row">
+    <label for="interval">Intervalo (min)</label>
+    <input id="interval" type="number" min="5" step="5" />
+  </div>
+
+  <div class="row actions">
+    <button id="save">Salvar</button>
+    <button id="notifyNow">Notificar agora</button>
+  </div>
+
+  <!-- Cronômetro -->
+  <div class="timer">
+    <h2>Próxima notificação em:</h2>
+    <span id="countdown">--:--</span>
+  </div>
+
+  <small class="hint">Extensão usa Alarm API. O Chrome pode atrasar alarmes em segundo plano.</small>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+#water-reminder-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0077ff;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 999999;
+}
+
+#water-reminder-widget #water-timer {
+  font-weight: bold;
+  font-size: 20px;
+}

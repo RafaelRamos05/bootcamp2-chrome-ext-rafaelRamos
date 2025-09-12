@@ -1,0 +1,68 @@
+:root {
+  --bg: #fff;
+  --accent: #0aa;
+  --muted: #666;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 260px;
+  padding: 12px;
+  background: var(--bg);
+  color: #111;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.row.actions {
+  gap: 8px;
+}
+
+button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(.98);
+}
+
+.hint {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Timer estilizado */
+.timer {
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f0fafa;
+  border: 1px solid #0aa3;
+}
+
+#countdown {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--accent);
+}

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Water Reminder",
+  "version": "1.0.0",
+  "description": "Lembra você de beber um copo de água a cada X minutos (padrão: 30).",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Water Reminder",
+    "default_popup": "src/background/popup/popup.html"
+
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  },
+  "permissions": ["alarms", "storage", "notifications"],
+  "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["src/background/content/content.js"],
+    "css": ["src/background/content/content.css"],
+    "run_at": "document_idle"
+  }
+]
+
+}
